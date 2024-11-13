@@ -13,14 +13,13 @@ public class Student implements Serializable {
         this.gpa = gpa;
     }
 
+    @Override
     public String toString(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("\nName: ");
-        sb.append(this.name);
-        sb.append("\n Age: ");
-        sb.append(this.age);
-        sb.append("\n GPA: ");
-        sb.append(this.gpa);
-        return sb.toString();
+        return "\nName: " +
+                this.name +
+                "\n Age: " +
+                this.age +
+                "\n GPA: " +
+                this.gpa;
     }
 }
